@@ -1,5 +1,6 @@
-*{
-    font-family: Graphik,sans-serif;
+body{
+    font-family: 'Roboto', sans-serif;
+    overflow: hidden;
 }
 nav{
     display: flex;
@@ -34,7 +35,6 @@ nav ul li button{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    
   padding-left: 100px;
     
 }
@@ -42,6 +42,7 @@ nav ul li button{
     display: flex;
     flex-direction: column;
     justify-content: center;
+
 }
 .section1 h1{
     line-height: 1px;
@@ -52,16 +53,18 @@ nav ul li button{
 }
 .section1 img{
     border-radius: 40px;
+ 
 }
 .section2{
-    background-color: #565757;
+    /* background-color: #565757; */
     padding-left: 100px;    
     display: grid;
     justify-content: space-between;
     width: 100%;
+
     grid-template-columns:1fr 1fr 1fr;
-    /* width: 100%; */
-    overflow: hidden;
+
+
 
 }
 .column1{
@@ -83,6 +86,29 @@ nav ul li button{
     grid-column-end:4;
     display: grid;
     width: 70%;
+    margin-left: 80px;
 
     grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.section3{
+    background-color:  #172734;
+    display: flex;
+    gap: 100px;
+ padding: 10px;
+ overflow: hidden;
+
+}
+.section3Header{
+    color: white;
+}
+.section3Header2{
+    color: rgb(199, 194, 194);
+    font-weight: 100;
+
+}
+.Card{
+    display: flex;
+    margin-top: 20px;
+    border-radius: 30px;
+    background-color: hsla(0,0%,100%,.1);;
 }

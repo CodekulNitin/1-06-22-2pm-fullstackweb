@@ -1,0 +1,24 @@
+nav ul li{
+    list-style: none;
+ 
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    box-shadow: 0px 0.2px 0.2px 0.2px;
+    width: 100%;
+}
+nav ul li a{
+    text-decoration: none;
+}
+ul{
+    display: flex;
+    gap: 20px;
+}
+nav ul img{
+    border-radius: 50%;
+}
+.menus{
+    margin-right: 100px;
+}

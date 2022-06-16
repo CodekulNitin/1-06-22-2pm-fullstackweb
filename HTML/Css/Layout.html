@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      nav {
+        width: 97.5%;
+        border: 1px solid black;
+        padding: 20px;
+        position: fixed;
+        top: 0px;
+        /* overflow: hidden !important; */
+      }
+      .container {
+        margin-top: 100px;
+        display: grid;
+        gap: 20px;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+      }
+      .card1 {
+        height: 200px;
+
+        border: 1px solid black;
+      }
+      .card2 {
+        height: 200px;
+
+        border: 1px solid black;
+        grid-column-start: 2;
+        grid-column-end: 4;
+      }
+      .card3 {
+        height: 200px;
+
+        border: 1px solid black;
+      }
+      .card4 {
+        height: 200px;
+        grid-column-start: 1;
+        grid-column-end: 5;
+        border: 1px solid black;
+      }
+      .card5 {
+        height: 200px;
+        grid-column-start: 1;
+        grid-column-end: 3;
+        border: 1px solid black;
+      }
+      .card6 {
+        height: 200px;
+        grid-column-start: 3;
+        grid-column-end: 5;
+        border: 1px solid black;
+      }
+      .card7 {
+        height: 200px;
+
+        border: 1px solid black;
+      }
+      .card8 {
+        height: 200px;
+
+        border: 1px solid black;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- <div class="nav"> -->
+    <nav></nav>
+    <div class="container">
+      <div class="card1">1</div>
+      <div class="card2">2</div>
+      <div class="card3">3</div>
+      <div class="card4">4</div>
+      <div class="card5">5</div>
+      <div class="card6">6</div>
+      <div class="card7">7</div>
+      <div class="card8">8</div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      nav {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        border-bottom: 1px solid gray;
+        position: fixed;
+        width: 99%;
+        overflow: hidden;
+        top: 0px;
+        background-color: white;
+      }
+      nav ul {
+        list-style: none;
+        display: flex;
+        align-items: center;
+        gap: 20px;
+      }
+      nav ul a {
+        text-decoration: none;
+      }
+      .section1 {
+        margin-top: 150px;
+        margin-left: 100px;
+      }
+      #heading {
+        color: gray;
+      }
+      .section1 h1 {
+        font-weight: 100;
+        line-height: 20px;
+        font-size: 50px;
+      }
+
+      #section1img {
+        border-radius: 20px;
+      }
+      .section2 {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        gap: 150px;
+        padding: 20px;
+        padding-left: 100px;
+        background-color: rgb(199, 194, 194);
+        overflow: hidden;
+      }
+      .cards {
+        grid-column-start: 2;
+        grid-column-end: 5;
+        align-items: center;
+        gap: 20px;
+        display: grid;
+      }
+      .section2head {
+        width: 300px;
+      }
+      .card1 {
+        display: flex;
+        gap: 20px;
+        line-height: 10px;
+        border-radius: 20px;
+        background-color: white;
+        padding: 10px;
+      }
+      .card1 img {
+        height: 50px;
+        padding-top: 10px;
+      }
+      .card2 {
+        display: flex;
+        gap: 20px;
+        line-height: 10px;
+        border-radius: 20px;
+        background-color: white;
+        padding: 10px;
+        position: relative;
+        top: -150px;
+      }
+      .card2 img {
+        height: 50px;
+        padding-top: 10px;
+      }
+      .card3 {
+        display: flex;
+        gap: 20px;
+        line-height: 10px;
+        border-radius: 20px;
+        background-color: white;
+        padding: 10px;
+      }
+      .card3 img {
+        height: 50px;
+        padding-top: 10px;
+      }
+      .cardtext {
+        display: flex;
+        flex-direction: column;
+      }
+      #arrow {
+        z-index: 1000;
+        position: relative;
+        right: 25px;
+        height: 140px;
+        top: -90px;
+      }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <ul>
+        <li>
+          <a href="">
+            <img
+              src="	https://uploads-ssl.webflow.com/62517a5448ad13673bbfeb7f/625452457cc77f7f28839dd9_logo.svg"
+              alt=""
+            />
+          </a>
+        </li>
+        <li>
+          <a href=""> Concord Studio® </a>
+        </li>
+        <li>
+          <a href=""> Digital agency, reinvented </a>
+        </li>
+      </ul>
+      <ul>
+        <li>
+          <button>Get Started</button>
+        </li>
+      </ul>
+    </nav>
+    <div class="section1">
+      <h1>Design studio with a fixed fee.</h1>
+      <div class="heading">
+        <h1 id="heading">We replace unreliable freelancers and</h1>
+        <h1 id="heading">expensive agencies for one flat monthly fee.</h1>
+      </div>
+      <div>
+        <img
+          id="section1img"
+          src="	https://uploads-ssl.webflow.com/62517a5448ad13673bbfeb7f/6254690110ab472878fbda60_image.jpg"
+          width="1100"
+          alt=""
+        />
+      </div>
+    </div>
+    <div class="section2">
+      <div class="section2head">
+        <h1>How We Work</h1>
+      </div>
+      <div class="cards">
+        <div class="card1">
+          <div>
+            <img
+              src="https://uploads-ssl.webflow.com/62517a5448ad13673bbfeb7f/6251a32caceede9fa0ed223f_Frame%20258.png"
+              alt=""
+            />
+          </div>
+
+          <div class="cardtext">
+            <h1>Kick Off</h1>
+            <p>
+              Tell us about your product and the challenges you're trying to
+              solve, and how we can help.
+            </p>
+          </div>
+        </div>
+        <div>
+          <img
+            id="arrow"
+            src="	https://uploads-ssl.webflow.com/62517a5448ad13673bbfeb7f/6255499110f0e2ee05a8b456_arrow-1.svg"
+            alt=""
+          />
+        </div>
+        <div class="card2">
+          <div>
+            <img
+              src="https://uploads-ssl.webflow.com/62517a5448ad13673bbfeb7f/6251a32caceede9fa0ed223f_Frame%20258.png"
+              alt=""
+            />
+          </div>
+          <div class="cardtext">
+            <h1>Kick Off</h1>
+            <p>
+              Tell us about your product and the challenges you're trying to
+              solve, and how we can help.
+            </p>
+          </div>
+        </div>
+        <div class="card3">
+          <div>
+            <img
+              src="https://uploads-ssl.webflow.com/62517a5448ad13673bbfeb7f/6251a32caceede9fa0ed223f_Frame%20258.png"
+              alt=""
+            />
+          </div>
+          <div class="cardtext">
+            <h1>Kick Off</h1>
+            <p>
+              Tell us about your product and the challenges you're trying to
+              solve, and how we can help.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

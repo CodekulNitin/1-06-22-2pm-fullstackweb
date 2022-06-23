@@ -1,0 +1,114 @@
+body{
+    font-family: 'Roboto', sans-serif;
+    /* overflow: hidden; */
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    box-shadow: 0px 0.2px 0px 0px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    background-color: white;
+}
+nav ul {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    gap: 10px;
+    font-size: 20px;
+}
+#menuitem2{
+    color: rgba(23,39,52,.5);
+}
+nav ul li button{
+    background-color: #06c;
+    color: white;
+    height: 35px;
+    border-radius: 20px;
+    width: 120px;
+    border: none;
+    margin-right: 40px;
+}
+.section1{
+    padding-top: 120px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  padding-left: 100px;
+    
+}
+.heading{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+.section1 h1{
+    line-height: 1px;
+    font-size:60px ;
+} 
+#heading{
+    color: rgba(23,39,52,.5);
+}
+.section1 img{
+    border-radius: 40px;
+ 
+}
+.section2{
+    /* background-color: #565757; */
+    padding-left: 100px;    
+    display: grid;
+    justify-content: space-between;
+    width: 100%;
+
+    grid-template-columns:1fr 1fr 1fr;
+
+
+
+}
+.column1{
+    width: 100%;
+  }
+
+#heading1{
+    color: rgb(199, 194, 194);
+}
+.company img{
+    height: 120px;
+    width: 120px;
+    overflow: hidden;
+
+}
+.company{
+    overflow: hidden;
+    grid-column-start: 2 ;
+    grid-column-end:4;
+    display: grid;
+    width: 70%;
+    margin-left: 80px;
+
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.section3{
+    background-color:  #172734;
+    display: flex;
+    gap: 100px;
+ padding: 10px;
+ overflow: hidden;
+
+}
+.section3Header{
+    color: white;
+}
+.section3Header2{
+    color: rgb(199, 194, 194);
+    font-weight: 100;
+
+}
+.Card{
+    display: flex;
+    margin-top: 20px;
+    border-radius: 30px;
+    background-color: hsla(0,0%,100%,.1);;
+}

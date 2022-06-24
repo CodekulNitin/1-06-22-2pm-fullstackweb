@@ -5,8 +5,23 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/fontawesome.min.css"
+      integrity="sha512-xX2rYBFJSj86W54Fyv1de80DWBq7zYLn2z0I9bIhQG+rxIF6XVJUpdGnsNHWRa6AvP89vtFupEPDP8eZAtu9qA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <style>
       nav {
+        z-index: 1000;
         display: flex;
         align-items: center;
         justify-content: space-between;
@@ -104,11 +119,31 @@
         flex-direction: column;
       }
       #arrow {
-        z-index: 1000;
+        z-index: 500;
         position: relative;
         right: 25px;
         height: 140px;
         top: -90px;
+      }
+      /* .card2:hover {
+        background-color: aqua;
+        color: black;
+        width: 500px;
+        line-height: 20px;
+      } */
+      .card3 {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      li{
+        font-size: 20px
+      }
+      li:nth-child(odd){
+        color: orangered;
+      }
+      li:nth-child(even){
+        color: rgb(38, 58, 33);
       }
     </style>
   </head>
@@ -195,21 +230,26 @@
           </div>
         </div>
         <div class="card3">
-          <div>
+          <!-- <div>
             <img
               src="https://uploads-ssl.webflow.com/62517a5448ad13673bbfeb7f/6251a32caceede9fa0ed223f_Frame%20258.png"
               alt=""
             />
-          </div>
-          <div class="cardtext">
-            <h1>Kick Off</h1>
-            <p>
-              Tell us about your product and the challenges you're trying to
-              solve, and how we can help.
-            </p>
-          </div>
+          </div> -->
+
+          <p>Tell us about your product</p>
+          <p><i class="fa-solid fa-angle-down" style="color: red"></i></p>
         </div>
       </div>
+
+      <ul>
+        <li>Codekul</li>
+        <li>Codekul</li>
+        <li>Codekul</li>
+        <li>Codekul</li>
+        <li>Codekul</li>
+        <li>Codekul</li>
+      </ul>
     </div>
   </body>
 </html>

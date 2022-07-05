@@ -57,3 +57,6 @@ nav {
     height: 300px;
     width: 425px;
   }
+  .fields{
+    grid-template-columns: 1fr 1fr 1fr;
+  }

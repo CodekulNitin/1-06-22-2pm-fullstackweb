@@ -1,0 +1,48 @@
+@media only screen and (max-width: 600px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+  }
+  .container img {
+    height: 200px;
+    width: 100%;
+  }
+}
+@media only screen and (min-width: 600px) and (max-width: 1024px) {
+  .container {
+    display: flex;
+    gap: 20px;
+  }
+  .container img {
+    height: 200px;
+    width: 100%;
+  }
+  .header{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr ;
+    gap:20px;
+  }
+  .card{
+    height: 300px;
+    background-color: rgb(75, 165, 42);
+  }
+}
+@media only screen and (min-width: 1024px) {
+  .container {
+    display: flex;
+    gap: 20px;
+  }
+  .container img {
+    height: 200px;
+    width: 100%;
+  }
+  .header{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap:20px;
+  }
+  .card{
+    height: 400px;
+    background-color: brown;
+  }
+}

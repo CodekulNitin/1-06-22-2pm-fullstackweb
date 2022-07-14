@@ -1,0 +1,15 @@
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+nav ul {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    list-style: none;
+    gap: 20px;
+}
+nav ul img{
+    height: 100px;
+}

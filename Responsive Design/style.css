@@ -1,15 +1,185 @@
-nav{
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
+body {
+  font-family: "Roboto", sans-serif;
+}
+@media only screen and (max-width: 600px) {
+  nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
-}
-nav ul {
+    position: fixed;
+    background-color: white;
+    top: 0px;
+    width: 98%;
+    z-index: 1000;
+  }
+  .header {
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    margin-left: 50px;
+  }
+  .header p {
+    font-size: 10px;
+    font-weight: 400;
+    width: 200px;
+  }
+  .header h1 {
+    width: auto;
+    font-size: 20px;
+  }
+  nav a {
+    text-decoration: none;
+  }
+  nav ul {
     display: flex;
     align-items: center;
     text-decoration: none;
     list-style: none;
     gap: 20px;
+  }
+  nav ul img {
+    height: 40px;
+  }
+  .logo {
+    font-size: 20px;
+    color: orange;
+  }
+  nav ul li a {
+    font-size: 10px;
+    color: black;
+  }
+  nav ul button {
+    background-color: #0c2c6b;
+    color: white;
+    padding: 5px;
+    border: none;
+    width: 50px;
+    font-size: 10px;
+    border-radius: 5px;
+  }
+  .menu {
+    margin-right: 0px;
+    display: none;
+  }
+  .block2{
+    display: flex;
+  }
+  .menubtn{
+    margin-right: 20px;
+  }
+
+  #block2img {
+    position: absolute;
+    height: 200px;
+  }
+  #bgimg {
+    position: relative;
+    /* right: 200px; */
+    height: 200px;
+  }
 }
-nav ul img{
-    height: 100px;
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+}
+@media only screen and (min-width: 1024px) {
+  nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    background-color: white;
+    top: 0px;
+    width: 100%;
+  }
+  nav a {
+    text-decoration: none;
+  }
+  nav ul {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    list-style: none;
+    gap: 20px;
+  }
+  .menubtn{
+
+    display:none;
+    
+  }
+  nav ul img {
+    height: 70px;
+  }
+  .logo {
+    font-size: 30px;
+    color: orange;
+  }
+  nav ul li a {
+    font-size: 30px;
+    color: black;
+  }
+  nav ul button {
+    background-color: #0c2c6b;
+    color: white;
+    padding: 10px;
+    border: none;
+    width: 80px;
+    font-size: 20px;
+    border-radius: 5px;
+  }
+  .menu {
+    margin-right: 60px;
+  }
+  .header {
+    margin-top: 150px;
+    font-size: 30px;
+    display: flex;
+    gap: 400px;
+    align-items: center;
+    width: 1200px;
+    margin-left: 50px;
+  }
+  .header p {
+    font-size: 18px;
+    font-weight: 400;
+  }
+  .header h1 {
+    width: 700px;
+    font-weight: 700;
+    color: #0c2c6b;
+  }
+  .block2 {
+    display: flex;
+  }
+  #block2img {
+    position: absolute;
+  }
+  #bgimg {
+    position: relative;
+    right: 200px;
+  }
+  .header input {
+    width: 400px;
+    height: 40px;
+    border-radius: 5px;
+    outline: none;
+    padding-left: 20px;
+    font-size: 15px;
+  }
+  .header button {
+    height: 40px;
+    width: 100px;
+    border-radius: 5px;
+    position: absolute;
+    left: 360px;
+    margin-top: 3px;
+    background-color: orange;
+    font-size: 20px;
+    font-weight: 500;
+    color: white;
+    border: none;
+  }
+  .searchFields {
+    padding-top: 50px;
+  }
 }

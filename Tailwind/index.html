@@ -6,7 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link href="/dist/output.css" rel="stylesheet" />
-    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.tailwindcss.com/"></script>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
+    <script>
+      function toggleModal() {
+        document.getElementById("modal").classList.toggle("hidden");
+      }
+    </script>
   </head>
   <body>
     <nav
@@ -43,9 +49,63 @@
             <a href=""> Blog </a>
           </li>
           <li>
-            <button class="px-5 py-1 bg-blue-900 text-white rounded-md">
-              Log In
-            </button>
+            <div class="flex items-center justify-center h-full">
+              <button
+                class="py-2 px-4 bg-blue-500 text-white rounded hover:bg-blue-700"
+                onclick="toggleModal()"
+              >
+                LogIn
+              </button>
+            </div>
+            <div
+              class="fixed z-10 overflow-y-auto top-0 w-full left-0 hidden"
+              id="modal"
+            >
+              <div
+                class="flex items-center justify-center min-height-100vh pt-4 px-4 pb-20 text-center sm:block sm:p-0"
+              >
+                <div class="fixed inset-0 transition-opacity">
+                  <div class="absolute inset-0 bg-gray-900 opacity-75" />
+                </div>
+                <span class="hidden sm:inline-block sm:align-middle sm:h-screen"
+                  >&#8203;</span
+                >
+                <div
+                  class="inline-block align-center bg-white rounded-lg text-left overflow-hidden shadow-xl transform transition-all sm:my-8 sm:align-middle sm:max-w-lg sm:w-full"
+                  role="dialog"
+                  aria-modal="true"
+                  aria-labelledby="modal-headline"
+                >
+                  <div class="bg-white px-4 pt-5 pb-4 sm:p-6 sm:pb-4">
+                    <label>Name</label>
+                    <input
+                      type="text"
+                      class="w-full bg-gray-100 p-2 mt-2 mb-3"
+                    />
+                    <label>Url</label>
+                    <input
+                      type="text"
+                      class="w-full bg-gray-100 p-2 mt-2 mb-3"
+                    />
+                  </div>
+                  <div class="bg-gray-200 px-4 py-3 text-right">
+                    <button
+                      type="button"
+                      class="py-2 px-4 bg-gray-500 text-white rounded hover:bg-gray-700 mr-2"
+                      onclick="toggleModal()"
+                    >
+                      <i class="fas fa-times"></i> Cancel
+                    </button>
+                    <button
+                      type="button"
+                      class="py-2 px-4 bg-blue-500 text-white rounded hover:bg-blue-700 mr-2"
+                    >
+                      <i class="fas fa-plus"></i> Create
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
           </li>
         </ul>
       </div>
@@ -74,10 +134,8 @@
               id=""
             />
           </div>
-          <div class="flex justify-center ">
-            <button
-              class="bg-orange-500 text-white px-3 py-2 rounded-r-lg"
-            >
+          <div class="flex justify-center">
+            <button class="bg-orange-500 text-white px-3 py-2 rounded-r-lg">
               Search
             </button>
           </div>
@@ -88,75 +146,101 @@
       </div>
     </div>
     <div>
-<div class="flex justify-center my-10">
-  <h1 class="text-blue-900 font-bold text-4xl">Popular Category</h1>
-</div>
-    <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-5 px-5 md:px-12 xl:px-32 my-10 overflow-x-scroll	">
-      <div class="card  shadow-lg border rounded-md py-5">
-        <div class="flex justify-center my-4">
-          <div class="h-28 w-28  rounded-full bg-gray-100">
-            <img class="pl-6 pt-7" src="./Lernit/assets/Vector.svg" alt="">
-          </div>
-        </div>
-        <div class="flex justify-center">
-          <h1 class="text-blue-900 font-semibold text-2xl">
-            Web Development
-          </h1>
-        </div>
-        <div class="flex justify-center">
-          <p>Eleifend odio elit etiam <br> 
-            praesent pharetra,vel</p>
-        </div>
+      <div class="flex justify-center my-10">
+        <h1 class="text-blue-900 font-bold text-4xl">Popular Category</h1>
       </div>
-      <div class="card shadow-lg border rounded-md  py-5">
-        <div class="flex justify-center my-4">
-          <div class="h-28 w-28  rounded-full bg-gray-100">
-            <img class="pl-6 pt-7" src="./Lernit/assets/Vector1.svg" alt="">
+      <div
+        class="grid md:grid-cols-2 lg:grid-cols-4 gap-5 px-5 md:px-12 xl:px-32 my-10 overflow-x-scroll"
+      >
+        <div class="card shadow-lg border rounded-md py-5">
+          <div class="flex justify-center my-4">
+            <div class="h-28 w-28 rounded-full bg-gray-100">
+              <img
+                class="pl-6 pt-7 animate-bounce"
+                src="./Lernit/assets/Vector.svg"
+                alt=""
+              />
+            </div>
+          </div>
+          <div class="flex justify-center">
+            <h1 class="text-blue-900 font-semibold text-2xl">
+              Web Development
+            </h1>
+          </div>
+          <div class="flex justify-center">
+            <p>
+              Eleifend odio elit etiam <br />
+              praesent pharetra,vel
+            </p>
           </div>
         </div>
-        <div class="flex justify-center">
-          <h1 class="text-blue-900 font-semibold text-2xl">
-            Digital Marketing
-          </h1>
-        </div>
-        <div class="flex justify-center">
-          <p>Eleifend odio elit etiam <br> 
-            praesent pharetra,vel</p>
-        </div>
-      </div>
-      <div class="card  shadow-lg border  rounded-md py-5">
-        <div class="flex justify-center my-4">
-          <div class="h-28 w-28  rounded-full bg-gray-100">
-            <img class="pl-6 pt-7" src="./Lernit/assets/Vector2.svg" alt="">
+        <div class="card shadow-lg border rounded-md py-5">
+          <div class="flex justify-center my-4">
+            <div class="h-28 w-28 rounded-full bg-gray-100">
+              <img
+                class="pl-6 pt-7 animate-ping"
+                src="./Lernit/assets/Vector1.svg"
+                alt=""
+              />
+            </div>
+          </div>
+          <div class="flex justify-center">
+            <h1 class="text-blue-900 font-semibold text-2xl">
+              Digital Marketing
+            </h1>
+          </div>
+          <div class="flex justify-center">
+            <p>
+              Eleifend odio elit etiam <br />
+              praesent pharetra,vel
+            </p>
           </div>
         </div>
-        <div class="flex justify-center">
-          <h1 class="text-blue-900 font-semibold text-2xl">
-            Graphics Desging
-          </h1>
-        </div>
-        <div class="flex justify-center">
-          <p>Eleifend odio elit etiam <br> 
-            praesent pharetra,vel</p>
-        </div>
-      </div>
-      <div class="card  shadow-lg border rounded-md py-5">
-        <div class="flex justify-center my-4">
-          <div class="h-28 w-28  rounded-full bg-gray-100">
-            <img class="pl-6 pt-7" src="./Lernit/assets/Vector3.svg" alt="">
+        <div class="card shadow-lg border rounded-md py-5">
+          <div class="flex justify-center my-4">
+            <div class="h-28 w-28 rounded-full bg-gray-100">
+              <img
+                class="pl-6 pt-7 animate-spin"
+                src="./Lernit/assets/Vector2.svg"
+                alt=""
+              />
+            </div>
+          </div>
+          <div class="flex justify-center">
+            <h1 class="text-blue-900 font-semibold text-2xl">
+              Graphics Desging
+            </h1>
+          </div>
+          <div class="flex justify-center">
+            <p>
+              Eleifend odio elit etiam <br />
+              praesent pharetra,vel
+            </p>
           </div>
         </div>
-        <div class="flex justify-center">
-          <h1 class="text-blue-900 font-semibold text-2xl">
-            App Development
-          </h1>
-        </div>
-        <div class="flex justify-center">
-          <p>Eleifend odio elit etiam <br> 
-            praesent pharetra,vel</p>
+        <div class="card shadow-lg border rounded-md py-5">
+          <div class="flex justify-center my-4">
+            <div class="h-28 w-28 rounded-full bg-gray-100">
+              <img
+                class="pl-6 pt-7 animate-pulse"
+                src="./Lernit/assets/Vector3.svg"
+                alt=""
+              />
+            </div>
+          </div>
+          <div class="flex justify-center">
+            <h1 class="text-blue-900 font-semibold text-2xl">
+              App Development
+            </h1>
+          </div>
+          <div class="flex justify-center">
+            <p>
+              Eleifend odio elit etiam <br />
+              praesent pharetra,vel
+            </p>
+          </div>
         </div>
       </div>
     </div>
-  </div>
   </body>
 </html>
